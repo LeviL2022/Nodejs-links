@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest ./test",
     "cli": "node cli.js ./texto1.md"
   },
   "keywords": [],
@@ -14,5 +14,15 @@
   "dependencies": {
     "chalk": "^5.0.1",
     "node-fetch": "^3.2.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "babel-jest": "^28.1.1",
+    "jest": "^28.1.1"
+  },
+  "transform": {
+    "\\.[jt]sx?$": "babel-jest"
   }
 }

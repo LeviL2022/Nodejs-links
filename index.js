@@ -1,4 +1,3 @@
-import chalk from 'chalk';
 import * as fs from 'node:fs';
 
 function extraiLinks(texto) {
@@ -13,7 +12,7 @@ function extraiLinks(texto) {
 
 
 function trataErro(erro) {
-    throw new Error(chalk.black.bgBlue(erro.code, 'O caminho é um diretorio'));
+    throw new Error(erro.code, 'O caminho é um diretorio');
 }
 
 async function pegaArquivo(caminhoDoArquivo) {
